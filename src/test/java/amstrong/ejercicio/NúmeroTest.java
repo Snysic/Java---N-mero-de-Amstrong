@@ -10,6 +10,9 @@ public class NúmeroTest {
         assertTrue(Número.isSpecialNumber(1634), "1634 true");
     }
 
-    
-
+    @Test
+    void testNegativeCases() {
+        assertFalse(Número.isSpecialNumber(351), "351 false");
+        assertFalse(Número.isSpecialNumber(2015), "2015 false");
+    } 
 }
