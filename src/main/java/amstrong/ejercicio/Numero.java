@@ -1,6 +1,6 @@
 package amstrong.ejercicio;
 
-public class Número {
+public class Numero {
         public static boolean isSpecialNumber(int n) {
             String numberStr = String.valueOf(n);
             int numDigits = numberStr.length();
