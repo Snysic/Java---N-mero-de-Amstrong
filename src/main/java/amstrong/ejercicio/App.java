@@ -1,17 +1,22 @@
 package amstrong.ejercicio;
 
-/**
- * Hello world!
- */
-public final class App {
-    private App() {
-    }
+import java.util.Scanner;
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
+public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Introduce un numero para comprobar");
+        int number = scanner.nextInt();
+        
+        boolean isSpecial = Numero.isSpecialNumber(number);
+        
+        if (isSpecial) {
+            System.out.println(number + " Numero especial.");
+        } else {
+            System.out.println(number + " Numero no especial.");
+        }
+        
+        scanner.close();
     }
 }
